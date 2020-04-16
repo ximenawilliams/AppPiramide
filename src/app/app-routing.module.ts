@@ -33,6 +33,14 @@ const routes: Routes = [
   {
     path: 'picadas',
     loadChildren: () => import('./picadas/picadas.module').then( m => m.PicadasPageModule)
+  },
+  {
+    path: 'snack',
+    loadChildren: () => import('./snack/snack.module').then( m => m.SnackPageModule)
+  },
+  {
+    path: 'menu-alimentos',
+    loadChildren: () => import('./menu-alimentos/menu-alimentos.module').then( m => m.MenuAlimentosPageModule)
   }
 ];
 @NgModule({
